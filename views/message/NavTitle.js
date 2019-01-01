@@ -55,7 +55,7 @@ var styles = StyleSheet.create({
         flexDirection: 'row'
     },
     inputItem: {
-        width: 280,
+        flex: 5,
         height: 28,
         paddingLeft: 30,
         backgroundColor: '#fe83b4',

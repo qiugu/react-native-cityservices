@@ -39,7 +39,7 @@ class BaseInfo extends Component{
       <View style={styles.setContainer}>
         <TouchableHighlight underlayColor="#eee" style={styles.touchable} onPress={() => this.props.navigation.navigate('setMaterial')}>
           <View style={styles.baseinfo}>
-            <View style={{flexDirection: 'row'}}>
+            <View style={{flexDirection: 'row',alignItems: 'center'}}>
               <Image source={this.props.person.img} style={styles.portrait}></Image>
               <View style={{paddingLeft: 20}}>
                 <Text style={styles.fontPerson}>
@@ -168,7 +168,7 @@ const styles = StyleSheet.create({
     paddingRight: 20,
   },
   portrait: {
-    borderRadius: 35,
+    borderRadius: Platform.OS === 'ios' ? 25 :35,
     width: 50,
     height: 50
   },
